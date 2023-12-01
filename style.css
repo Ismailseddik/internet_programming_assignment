@@ -1,0 +1,433 @@
+*{
+   margin: 0;
+   padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+
+}
+body{
+    height: 100px;
+    background-image: url("Statsbiblioteket_læsesalen-2.jpg");
+    background-size: cover ;
+    background-position: center;
+}
+section{
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.navbar ul li {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .navbar ul li:hover .dropdown {
+    display: block;
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: antiquewhite;
+    padding: 0;
+    margin-top: 5px;
+  }
+  
+  .dropdown li {
+
+    display: block;
+  }
+  .sub-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 1;
+  }
+  
+  .dropdown:hover > .sub-menu,
+  .sub-menu-trigger:focus + .sub-menu {
+    padding: 10px;
+    background-color: antiquewhite;
+    display: block;
+  }
+  .dropdown:hover > .sub-menu,
+.sub-menu-trigger:hover + .sub-menu {
+  display: block;
+}
+
+.sub-menu-trigger:focus + .sub-menu {
+  display: block;
+}
+  .dropdown li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+  }
+.header .flex img{
+    width: 50px;
+    height:50px;
+}
+.header .flex .btn{
+    
+    display: inline-block;
+    margin: 1rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    font-size: 1rem;
+    color: white;
+    background-color: crimson;
+    border-radius: .5rem;
+    text-transform: capitalize;
+    text-align: center;
+    justify-content: center;
+}
+image{
+    width: 10px;
+    height: auto;
+}
+.header .flex .btn:hover{
+    background-color: black;
+    color: white;
+}
+a:hover{
+    color: crimson;
+    transition: all 0.3s;
+}
+.header{
+    top: 0;left: 0;right: 0;
+    background-color: antiquewhite;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    z-index: 1000;
+}
+.header .flex{
+position: relative;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.header .flex .logo{
+    font-size: 1.6rem;
+    color: black;
+}
+.header .flex .navbar a{
+    display: inline-block;
+    padding: .5rem 1rem;
+    font-size: 1.4rem;
+    border-radius: .5rem;
+    color: darkcyan;
+    text-transform: capitalize;
+}
+.header .flex .navbar a:hover{
+    background-color: crimson;
+    color: white;
+} 
+.list_books
+{
+    display: flex;
+    flex-wrap: wrap;
+    width:200px;
+    height: 150px;
+    padding: 1rem 1rem;
+    font-size: 1.2rem;
+    border-radius: .5rem;
+    text-transform: capitalize;
+
+    top: 100%;
+    background-color: antiquewhite;
+}
+.list_books a{
+    padding: .5rem 1rem;
+    font-size: 1.4rem;
+    border-radius: .5rem;
+    color: darkcyan;
+    text-transform: capitalize;
+    position: relative;
+}
+.list_books a:hover{
+    border-radius: 10px;
+    background-color: crimson;
+    color: white;
+}
+.footer{
+    top: 0;left: 0;right: 0;
+    background-color: antiquewhite;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    z-index: 1000;
+}
+.footer .grid{
+    display: grid;
+    position: block;
+    grid-template-columns: repeat(auto-fit,30rem);
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+.footer .grid .box h3{
+    font-size: 2rem;
+    color: black;
+    margin: 1rem 0;
+    text-transform: capitalize;
+    background-color: antiquewhite;
+}
+footer .grid .box a{
+    width: 100%;
+    background-color: antiquewhite;
+    display: block;
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    color: blue;
+   
+}
+footer .grid .box a:hover i{
+    transition: .2s;
+margin-right: 2rem;
+}
+.footer .credit{
+    text-align: center;
+    padding: 2rem;
+    font-size: 20px;
+    background-color: antiquewhite;
+    color: black;
+}
+.footer .credit span{
+    text-transform: capitalize;
+}
+.home_container .home{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.home_container .home form{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    width: 50rem;
+    padding: 2rem;
+    text-align: center;
+}
+.home_container .home form h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.home_container .home form p{
+    text-align: left;
+    font-size: 1.4rem;
+    padding-top: 1rem;
+}
+.home_container .home form .input{
+width: 100%;
+border-radius: 10px;
+margin: 1rem 0;
+padding: 1.4rem;
+font-size: 1.2rem;
+}
+.home_container .home form .btn{
+    display: inline-block;
+    margin: 1rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    font-size: 1rem;
+    color: white;
+    background-color: crimson;
+    border-radius: .5rem;
+    text-transform: capitalize;
+    text-align: center;
+    justify-content: center;
+}
+.home_container .home form .btn:hover{
+    background-color: black;
+    color: white;
+}
+.categoris{
+    top: 0;left: 0;right: 0;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    z-index: 1000;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+.category .categories_container img{
+    width: 50px;
+    height:50px;
+    margin:10px;
+}
+.category .categories_container{
+    display: grid;
+    border-radius: 10px;
+    grid-template-columns: repeat(auto-fit,30rem);
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+.category .categories_container .box{
+    border-radius: 0.5rem;
+    border: solid 5px;
+    background-color: antiquewhite;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+}
+.category .categories_container .box i{
+height: 4.5rem;
+width: 5rem;
+font-size: 1.8rem;
+text-align: center;
+}
+.category .categories_container .box h3{
+    font-size: 1.8rem;
+    padding-bottom: 0.2rem;
+    
+}
+.category .categories_container .box span{
+    font-size: 1.5rem;
+
+}
+.about{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about .box{
+    text-align: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: solid 5px;
+    background-color: antiquewhite;
+    padding: 2rem;
+    display: block;
+    align-items: center;
+}
+.about .box p{
+    padding: 1rem 0;
+    font-size: 1.4rem;
+}
+.about .box h3{
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    padding-bottom: 0.2rem;
+    
+}
+.about .box .btn{
+    display: flex;
+    margin: 1rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    font-size: 1rem;
+    color: white;
+    background-color: crimson;
+    border-radius: .5rem;
+    text-transform: capitalize;
+    text-align: center;
+    justify-content: center;
+}
+.about .box .btn:hover{
+    background-color: black;
+    color: white;
+}
+.books_filter form{
+    text-align: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: solid 5px;
+    background-color: antiquewhite;
+    padding: 2rem;
+    display: block;
+    align-items: center;
+}
+.books_filter form .box p{
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    text-align: left;
+}
+.books_filter form .box input{
+    width: 100%;
+border-radius: 10px;
+margin: 1rem 0;
+padding: 1.4rem;
+font-size: 1.2rem;
+}
+.books_filter form .box .btn{
+    display: flex;
+    margin: 1rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    font-size: 1rem;
+    color: white;
+    background-color: crimson;
+    border-radius: .5rem;
+    text-transform: capitalize;
+    text-align: center;
+    justify-content: center;
+
+}
+.books_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,35rem);
+
+}
+.books_filter form .box .btn:hover{
+    background-color: black;
+    color: white;
+}
+.books_container .box{
+    text-align: center;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    max-width: 500px;
+    max-height: fit-content;
+    border: solid 5px;
+    background-color: antiquewhite;
+    padding: 50px;
+    display: block;
+    align-items: center;
+}
+.books_container .box .book_cover img{
+    height: 100px;
+    width: 100px;
+}
+.books_container .box .book_details{
+    margin: 1rem;
+}
+.books_container .box .book_details .btn{
+    display: block;
+    margin: 1rem;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: crimson;
+    border-radius: .5rem;
+    text-transform: capitalize;
+    text-align: center;
+    justify-content: center;
+}
+.books_container .box .book_details .btn a{
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+}
+.books_container .box  h3{
+    font-size: 1.8rem;
+    margin: 1rem;
+    text-transform: capitalize;
+    padding-bottom: 0.2rem;
+}
+.books_container .box .book_details p{
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    text-align: center;
+}
+.books_container .box .book_details .btn:hover{
+    background-color: black;
+    color: white;
+}
