@@ -10,31 +10,36 @@
 </head>
 <body>
     <header class="header">
-        
         <section class="flex">
-            <img src="8074804.png" alt="none">
-            <a href="home.html" class="logo"> the interactive library</a>
-            <nav class="navbar">
-                <a href="home.html">home</a>
-                <a href="about.html">about</a>
-                <a href="#">books <i class="fas fa-caret-down"></i></a>
-
-                
-                <a href="movies.html">movies</a>
-                <a href="contact.html">contact</a>
-            </nav>
-            <a href="login" class="btn">sign in</a>
-            <a href="register" class="btn">sign up</a>
-        </section>
-        <div class="list_books">
-
-            <ul style="list-style: none;">
-                <li><a href="books.html">science books</a></li>
-                <li> <a href="comics.html">comics</a></li>
-                <li> <a href="novels.html">novels</a></li>
+          <img src="8074804.png" alt="none">
+          <a href="home.html" class="logo">the interactive library</a>
+          <nav class="navbar">
+            <ul>
+              <li><a href="home.html">home</a></li>
+              <li><a href="about.html">about</a></li>
+              <li class="dropdown">
+                <a class="sub-menu-trigger" href="#">books <i class="fas fa-caret-down"></i></a>
+                <ul class="sub-menu">
+                  <li><a href="books.html">science books</a></li>
+                  <li><a href="comics.html">comics</a></li>
+                  <li class="dropdown">
+                    <a class="sub-menu-trigger" href="#">novels <i class="fas fa-caret-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="childrenStories.html">childrenStories</a></li>
+                        <li><a href="Fantasy.html">Fantasy</a></li>
+                        <li><a href="ScienceFiction.html">Science fiction</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="movies.html">movies</a></li>
+              <li><a href="contact.html">contact</a></li>
             </ul>
-        </div>
-    </header>
+          </nav>
+          <a href="login.html" class="btn">sign in</a>
+          <a href="register.html" class="btn">sign up</a>
+        </section>
+      </header>
     <section class="books_filter">
         <form action="" method="post">
                 <div class="box">
@@ -42,7 +47,7 @@
                     <input type="text" name="title" placeholder="keyword,category" class="input" id="book_title">
                     <p>genre of book</p>
                     <input type="text" name="genre" placeholder="enter the genre of the book eg:science fiction,action" class="input" id="">
-                    <input type="submit" value="Search Book" name="search" class="btn" id="">
+                    <input type="submit" onclick="search" value="Search Book" name="search" class="btn" id="">
                 </div>
         </form>
     </section>
@@ -64,7 +69,7 @@
             <div class="book_cover">
                 <img src="63f0dc56e7f233ec4df7e108ae2e4e3f.jpg" alt="none">
             </div>
-            <h3>Michael Herman python and QT</h3>
+            <h3>12345</h3>
             <div class="book_details">
                 <p><i class="fas fa-dollar">40</i></p>
                 <div class="btn">

@@ -10,6 +10,7 @@
 body{
     height: 100px;
     background-image: url("Statsbiblioteket_læsesalen-2.jpg");
+    background-attachment: fixed;
     background-size: cover ;
     background-position: center;
 }
@@ -431,3 +432,67 @@ font-size: 1.2rem;
     background-color: black;
     color: white;
 }
+.contact .books_container .box{
+    text-align: center;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    max-width: 500px;
+    max-height: fit-content;
+    border: solid 5px;
+    background-color: antiquewhite;
+    padding: 50px;
+    display: block;
+    align-items: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 400px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+
+  button {
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  button:hover {
+    background-color: black;
+  }
+
+  .switch-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }

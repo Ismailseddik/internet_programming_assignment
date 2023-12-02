@@ -10,31 +10,36 @@
 </head>
 <body>
     <header class="header">
-        
         <section class="flex">
-            <img src="8074804.png" alt="none">
-            <a href="home.html" class="logo"> the interactive library</a>
-            <nav class="navbar">
-                <a href="home.html">home</a>
-                <a href="about.html">about</a>
-                <a href="#">books <i class="fas fa-caret-down"></i></a>
- 
-                
-                <a href="movies.html">movies</a>
-                <a href="contact.html">contact</a>
-            </nav>
-            <a href="login" class="btn">sign in</a>
-            <a href="register" class="btn">sign up</a>
-        </section>
-        <div class="list_books">
-
-            <ul style="list-style: none;">
-                <li><a href="books.html">science books</a></li>
-                <li> <a href="comics.html">comics</a></li>
-                <li> <a href="novels.html">novels</a></li>
+          <img src="8074804.png" alt="none">
+          <a href="home.html" class="logo">the interactive library</a>
+          <nav class="navbar">
+            <ul>
+              <li><a href="home.html">home</a></li>
+              <li><a href="about.html">about</a></li>
+              <li class="dropdown">
+                <a class="sub-menu-trigger" href="#">books <i class="fas fa-caret-down"></i></a>
+                <ul class="sub-menu">
+                  <li><a href="books.html">science books</a></li>
+                  <li><a href="comics.html">comics</a></li>
+                  <li class="dropdown">
+                    <a class="sub-menu-trigger" href="#">novels <i class="fas fa-caret-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="childrenStories.html">childrenStories</a></li>
+                        <li><a href="Fantasy.html">Fantasy</a></li>
+                        <li><a href="ScienceFiction.html">Science fiction</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="movies.html">movies</a></li>
+              <li><a href="contact.html">contact</a></li>
             </ul>
-        </div>
-    </header>
+          </nav>
+          <a href="login.html" class="btn">sign in</a>
+          <a href="register.html" class="btn">sign up</a>
+        </section>
+      </header>
     <section class="books_filter">
         <form action="" method="post">
                 <div class="box">
