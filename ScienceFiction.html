@@ -11,7 +11,7 @@
 <body>
     <header class="header">
         <section class="flex">
-          <img src="8074804.png" alt="none">
+          <img src="images/8074804.png" alt="none">
           <a href="home.html" class="logo">the interactive library</a>
           <nav class="navbar">
             <ul>
@@ -40,119 +40,113 @@
           <a href="register.html" class="btn">sign up</a>
         </section>
       </header>
+
+        <div class="btn">
+            <button onclick="capitalizeParagraphs()">capitalizeitems</button>
+            <button onclick="resetParagraphs()"> reset text</button>
+            <button onclick="toggleVisibilityByClass('box')">hide books</button>
+            <button onclick="hideSearchBox()">hide search box</button>
+            <button onclick="toggleBackgroundImage()">toggle Background Image</button>
+            <button onclick="changeElementColor('book_title_intext')">change book title text color</button>
+        </div>
+
     <section class="books_filter">
         <form action="" method="post">
                 <div class="box">
                     <p>book title</p>
-                    <input type="text" name="title" placeholder="keyword,category" class="input" id="book_title">
+                    <input type="text" name="title" placeholder="keyword,category" onclick="searchAndDisplayBook()" class="input" id="book_title">
                     <p>genre of book</p>
                     <input type="text" name="genre" placeholder="enter the genre of the book eg:science fiction,action" class="input" id="">
-                    <input type="submit" value="Search Book" name="search" class="btn" id="">
+                    <input type="submit" value="Search Book" name="search" class="btn" id="book_genre">
                 </div>
         </form>
     </section>
-    <section class="books_container">
+    <section class="books_container" id="book_container">
         <div class="box">
             <div class="book_cover">
-                <img src="63f0dc56e7f233ec4df7e108ae2e4e3f.jpg" alt="none">
+                <img src="images/image-asset+(16).jpeg" alt="none">
             </div>
-            <h3>Michael Herman python and QT</h3>
+            <h3 class="book_title_intext">Beyond the veil</h3>
             <div class="book_details">
                 <p><i class="fas fa-dollar">40</i></p>
-                <div class="btn">
-                    <a href="#">summary</a>
-                </div>
+                <button class="summary-button" onclick="showAlertOnClickByClass('summary-button', 'Alert on click!')">summery</button>
             </div>
 
         </div>
         <div class="box">
             <div class="book_cover">
-                <img src="63f0dc56e7f233ec4df7e108ae2e4e3f.jpg" alt="none">
+                <img src="images/canva-brown-rusty-mystery-novel-book-cover-hG1QhA7BiBU.jpg" alt="none">
             </div>
-            <h3>Michael Herman python and QT</h3>
+            <h3 class="book_title_intext">Soul</h3>
             <div class="book_details">
                 <p><i class="fas fa-dollar">40</i></p>
-                <div class="btn">
-                    <a href="#">summary</a>
-                </div>
+                <button class="summary-button" onclick="showAlertOnClickByClass('summary-button', 'Alert on click!')">summery</button>
             </div>
 
         </div>
         <div class="box">
             <div class="book_cover">
-                <img src="63f0dc56e7f233ec4df7e108ae2e4e3f.jpg" alt="none">
+                <img src="images/Artful-Cover_premade_120238162_Elemental-Mode_800x1200.jpg" alt="none">
             </div>
-            <h3>Michael Herman python and QT</h3>
+            <h3 class="book_title_intext">elemental mode</h3>
             <div class="book_details">
                 <p><i class="fas fa-dollar">40</i></p>
-                <div class="btn">
-                    <a href="#">summary</a>
-                </div>
+                <button class="summary-button" onclick="showAlertOnClickByClass('summary-button', 'Alert on click!')">summery</button>
             </div>
 
         </div>
         <div class="box">
             <div class="book_cover">
-                <img src="63f0dc56e7f233ec4df7e108ae2e4e3f.jpg" alt="none">
-            </div>
-            <h3>Michael Herman python and QT</h3>
+                <img src="images/SCI-FI-book-cover-design-space-marine-starship-science-fiction-woman-armor-nova-blaster-S1590905106B.jpg" alt="none">
+            </div >
+            <h3 class="book_title_intext">Nova Blaster</h3>
             <div class="book_details">
                 <p><i class="fas fa-dollar">40</i></p>
-                <div class="btn">
-                    <a href="#">summary</a>
-                </div>
+                <button class="summary-button" onclick="showAlertOnClickByClass('summary-button', 'Alert on click!')">summery</button>
             </div>
 
         </div>
         <div class="box">
             <div class="book_cover">
-                <img src="63f0dc56e7f233ec4df7e108ae2e4e3f.jpg" alt="none">
+                <img src="images/f8f4869a-3a32-45df-b7c3-6236bf736a15.jpg" alt="none">
             </div>
-            <h3>Michael Herman python and QT</h3>
+            <h3 class="book_title_intext">the sentinal</h3>
             <div class="book_details">
                 <p><i class="fas fa-dollar">40</i></p>
-                <div class="btn">
-                    <a href="#">summary</a>
-                </div>
+                <button class="summary-button" onclick="showAlertOnClickByClass('summary-button', 'Alert on click!')">summery</button>
             </div>
 
         </div>
         <div class="box">
             <div class="book_cover">
-                <img src="63f0dc56e7f233ec4df7e108ae2e4e3f.jpg" alt="none">
+                <img src="images/The-Last-Atlantean.jpg" alt="none">
             </div>
-            <h3>Michael Herman python and QT</h3>
+            <h3 class="book_title_intext">the last atlantean</h3>
             <div class="book_details">
                 <p><i class="fas fa-dollar">40</i></p>
-                <div class="btn">
-                    <a href="#">summary</a>
-                </div>
+                <button class="summary-button" onclick="showAlertOnClickByClass('summary-button', 'Alert on click!')">summery</button>
             </div>
 
         </div>
         <div class="box">
             <div class="book_cover">
-                <img src="63f0dc56e7f233ec4df7e108ae2e4e3f.jpg" alt="none">
+                <img src="images/Military-Epic-Science-Fiction-SciFi-Sci-Fi-Space-Opera-Premade-Book-Cover-Dagger.webp" alt="none">
             </div>
-            <h3>Michael Herman python and QT</h3>
+            <h3 class="book_title_intext">dagger</h3>
             <div class="book_details">
                 <p><i class="fas fa-dollar">40</i></p>
-                <div class="btn">
-                    <a href="#">summary</a>
-                </div>
+                <button class="summary-button" onclick="showAlertOnClickByClass('summary-button', 'Alert on click!')">summery</button>
             </div>
 
         </div>
         <div class="box">
             <div class="book_cover">
-                <img src="63f0dc56e7f233ec4df7e108ae2e4e3f.jpg" alt="none">
+                <img src="images/The-Gapcai-Effect-Science-Fiction-SciFi-Sci-Fi-Book-Cover.webp" alt="none">
             </div>
-            <h3>Michael Herman python and QT</h3>
+            <h3 class="book_title_intext">the gapcai effect</h3>
             <div class="book_details">
                 <p><i class="fas fa-dollar">40</i></p>
-                <div class="btn">
-                    <a href="#">summary</a>
-                </div>
+                    <button class="summary-button" onclick="showAlertOnClickByClass('summary-button', 'Alert on click!')">summery</button>
             </div>
 
         </div>
